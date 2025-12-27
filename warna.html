@@ -130,7 +130,17 @@
   <div class="note">* Nilai hanya estimasi, gunakan alat yang disediakan untuk melakukan pengecekan secara akurat.</div>
 
   <footer><center><small>PTAM Bandarmasih @2025 by AripR (214 07 525)</small></center></footer>
+<script>
+  document.addEventListener("keydown", function (e) {
+    if (e.altKey && e.key.toLowerCase() === "c") {
+      e.preventDefault();
 
+      const input = document.getElementById("inputAngka");
+      input.value = "";
+      input.focus();
+    }
+  });
+</script>
   <script>
     function hitungHasil(x) {
       const data = [
@@ -196,4 +206,5 @@
 
 </body>
 </html>
+
 
